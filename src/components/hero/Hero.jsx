@@ -139,28 +139,31 @@ function Hero() {
         {/* BUTTONS */}
 
         <motion.div
-          variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-        >
-
-          <a
-  href="https://ml-portfolio122.vercel.a"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-10 py-5 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-xl hover:scale-105 transition-all duration-300 flex items-center gap-3"
+  variants={itemVariants}
+  className="flex flex-col sm:flex-row gap-6 justify-center items-center"
 >
 
-  Explore Work →
+  <a
+    href="https://ml-portfolio122.vercel.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-10 py-5 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-xl hover:scale-105 transition-all duration-300 flex items-center gap-3"
+  >
 
-</a>
+    Explore Work →
 
-          <button className="px-10 py-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white font-bold text-lg hover:bg-white/10 transition-all">
+  </a>
 
-            Contact Us
+  <a
+    href="#contact"
+    className="px-10 py-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white font-bold text-lg hover:bg-white/10 transition-all inline-flex items-center justify-center"
+  >
 
-          </button>
+    Contact Us
 
-        </motion.div>
+  </a>
+
+</motion.div>
 
         {/* TRUST BADGES */}
 
