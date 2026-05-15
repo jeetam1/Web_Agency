@@ -13,7 +13,7 @@ const plans = [
   {
     title: "Starter",
 
-    price: "₹4,999",
+    price: "₹1,200",
 
     icon: (
       <Zap
@@ -31,6 +31,7 @@ const plans = [
       "Basic SEO",
       "Contact Form",
       "7-Day Delivery",
+      "Basic Cloud Hosting",
     ],
 
     recommended: false,
@@ -39,7 +40,7 @@ const plans = [
   {
     title: "Business",
 
-    price: "₹14,999",
+    price: "₹2,999",
 
     icon: (
       <Rocket
@@ -65,7 +66,7 @@ const plans = [
   {
     title: "Premium",
 
-    price: "₹29,999",
+    price: "₹9,999",
 
     icon: (
       <Crown
