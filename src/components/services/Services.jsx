@@ -92,7 +92,7 @@ function Services() {
   return (
     <section
       id="services"
-      className="relative py-28 px-6 bg-[#050816] overflow-hidden"
+      className="relative py-20 md:py-28 px-4 md:px-6 bg-[#050816] overflow-hidden"
     >
 
       {/* BACKGROUND GLOW */}
@@ -145,7 +145,7 @@ function Services() {
             viewport={{
               once: true,
             }}
-            className="text-5xl md:text-6xl font-black text-white tracking-tight mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-black text-white tracking-tight mb-6"
           >
 
             Solutions Built For{" "}
@@ -172,7 +172,7 @@ function Services() {
             viewport={{
               once: true,
             }}
-            className="text-gray-400 text-lg max-w-2xl mx-auto"
+            className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto"
           >
 
             We build premium digital
@@ -209,7 +209,7 @@ function Services() {
               whileHover={{
                 y: -6,
               }}
-              className="group relative p-10 rounded-[2.5rem] bg-white/5 border border-white/10 hover:border-blue-500/40 transition-all duration-500 overflow-hidden"
+              className="group relative p-6 md:p-10 rounded-[2.5rem] bg-white/5 border border-white/10 hover:border-blue-500/40 transition-all duration-500 overflow-hidden"
             >
 
               {/* HOVER GLOW */}
@@ -218,7 +218,7 @@ function Services() {
 
               {/* ICON */}
 
-              <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} p-[1px] mb-8`}>
+              <div className={`w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-r ${service.color} p-[1px] mb-8`}>
 
                 <div className="w-full h-full rounded-2xl bg-[#050816] flex items-center justify-center text-white">
 
@@ -230,7 +230,7 @@ function Services() {
 
               {/* TITLE */}
 
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
 
                 {service.title}
 
@@ -259,7 +259,7 @@ function Services() {
 
               {/* NUMBER */}
 
-              <div className="absolute -bottom-4 -right-4 text-8xl font-black text-white/[0.03] select-none pointer-events-none">
+              <div className="absolute -bottom-4 -right-4  text-6xl md:text-8xl font-black text-white/[0.03] select-none pointer-events-none">
 
                 0{index + 1}
 
@@ -288,7 +288,7 @@ function Services() {
           viewport={{
             once: true,
           }}
-          className="mt-20 p-8 rounded-[2rem] bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-white/10 backdrop-blur-xl flex flex-wrap justify-center gap-10 md:gap-20"
+          className="mt-20 p-5 md:p-8 rounded-[2rem] bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-white/10 backdrop-blur-xl flex flex-wrap justify-center gap-5 md:gap-20"
         >
 
           <div className="flex items-center gap-3">
