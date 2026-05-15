@@ -2,7 +2,7 @@ import React, {
   useEffect,
   useState,
 } from "react";
-
+import logo from "../../assets/logo1.png";
 import {
   Menu,
   X,
@@ -61,11 +61,11 @@ function Navbar() {
   className="flex items-center gap-3"
 >
 
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-black">
-
-            N
-
-          </div>
+          <img
+  src={logo}
+  alt="NeemuchStudio Logo"
+  className="w-14 h-14 object-contain"
+/>
 
           <h1 className="text-2xl font-black tracking-tight text-white">
 
@@ -81,7 +81,7 @@ function Navbar() {
 
         {/* DESKTOP MENU */}
 
-        <nav className="hidden md:flex items-center gap-12 ml-auto mr-20">
+        <nav className="hidden md:flex items-center gap-10 ml-auto mr-10">
 
           {links.map((link) => (
 
