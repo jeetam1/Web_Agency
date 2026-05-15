@@ -206,15 +206,17 @@ function Services() {
               viewport={{
                 once: true,
               }}
-              whileHover={{
-                y: -6,
-              }}
-              className="group relative p-6 md:p-10 rounded-[2.5rem] bg-white/5 border border-white/10 hover:border-blue-500/40 transition-all duration-500 overflow-hidden"
+              whileHover={
+  window.innerWidth > 768
+    ? { y: -6 }
+    : {}
+}
+              className="group relative p-6 md:p-10 rounded-[2.5rem] bg-white/5 border border-white/10 hover:border-blue-500/40 transition-all duration-500 overflow-hidden touch-none"
             >
 
               {/* HOVER GLOW */}
 
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
 
               {/* ICON */}
 
