@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import {
   Send,
   Phone,
@@ -17,25 +18,54 @@ function Contact() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const handleSubmit = async (e) => {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    setTimeout(() => {
-      alert("Message sent successfully!");
+  try {
 
-      setIsSubmitting(false);
+    await emailjs.send(
 
-      setFormState({
-        name: "",
-        email: "",
-        message: "",
-      });
+      "service_5ah537p",
 
-    }, 1500);
-  };
+      "template_ozs5tw6",
+
+      {
+        from_name: formState.name,
+
+        from_email: formState.email,
+
+        message: formState.message,
+      },
+
+      "iujnxuXqeGcyzezb0"
+    );
+
+    setSuccess(true);
+
+setTimeout(() => {
+  setSuccess(false);
+}, 3000);
+
+    setFormState({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+  } catch (error) {
+
+    console.log(error);
+
+    
+
+  }
+
+  setIsSubmitting(false);
+};
 
   return (
     <section
@@ -109,7 +139,7 @@ function Contact() {
                 </h4>
 
                 <p className="text-gray-400">
-                  +91 XXXXX XXXXX
+                  +91 9425361458
                 </p>
 
               </div>
@@ -133,7 +163,7 @@ function Contact() {
                 </h4>
 
                 <p className="text-gray-400">
-                  hello@neemuchstudio.com
+                  jjeetamsinghyadav@gmail.com
                 </p>
 
               </div>
@@ -166,26 +196,35 @@ function Contact() {
 
             {/* RESPONSE CARD */}
 
-            <div className="p-6 rounded-3xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-white/10">
+            <a
+  href="https://wa.me/919425361458?text=Hello%20NeemuchStudio,%20I%20would%20like%20to%20ask%20a%20question%20regarding%20website%20development."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block group"
+>
 
-              <h4 className="text-white font-bold mb-3 flex items-center gap-2">
+  <div className="p-6 rounded-3xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-white/10 hover:border-blue-500/30 hover:scale-[1.02] transition-all duration-300 cursor-pointer">
 
-                <MessageSquare
-                  size={20}
-                  className="text-blue-400"
-                />
+    <h4 className="text-white font-bold mb-3 flex items-center gap-2">
 
-                Fast Response
+      <MessageSquare
+        size={20}
+        className="text-blue-400 group-hover:rotate-6 transition-transform duration-300"
+      />
 
-              </h4>
+      Fast Response
 
-              <p className="text-sm text-gray-400">
+    </h4>
 
-                We usually respond within a few hours.
+    <p className="text-sm text-gray-400 leading-relaxed">
 
-              </p>
+      We usually respond within a few hours on WhatsApp.
 
-            </div>
+    </p>
+
+  </div>
+
+</a>
 
           </motion.div>
 
@@ -255,21 +294,40 @@ function Contact() {
 
               {/* BUTTON */}
 
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                disabled={isSubmitting}
-                className="w-full py-5 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg flex items-center justify-center gap-3"
-              >
+             <div className="flex items-center gap-4">
 
-                {isSubmitting ? "Sending..." : "Send Proposal"}
+  <motion.button
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+    disabled={isSubmitting}
+    type="submit"
+    className="px-8 py-5 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg flex items-center justify-center gap-3"
+  >
 
-                <Send
-                  size={20}
-                  className={isSubmitting ? "animate-pulse" : ""}
-                />
+    {isSubmitting ? "Sending..." : "Send Proposal"}
 
-              </motion.button>
+    <Send
+      size={20}
+      className={isSubmitting ? "animate-pulse" : ""}
+    />
+
+  </motion.button>
+
+  {
+
+    success && (
+
+      <p className="text-green-400 font-medium animate-pulse">
+
+        Message Sent Successfully ✓
+
+      </p>
+
+    )
+
+  }
+
+</div>
 
             </form>
 

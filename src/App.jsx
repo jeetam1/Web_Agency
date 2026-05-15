@@ -4,10 +4,11 @@ import Services from "./components/services/Services";
 import Pricing from "./components/pricing/Pricing";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Cursor from "./components/cursor/Cursor";
 function App() {
   return (
     <div className="bg-[#050816] text-white">
-
+      <Cursor />
       <Navbar />
 
       <Hero />

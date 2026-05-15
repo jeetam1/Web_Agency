@@ -52,11 +52,14 @@ function Navbar() {
       }`}
     >
 
-      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div className="w-full px-10 lg:px-16 py-5 flex items-center">
 
         {/* LOGO */}
 
-        <div className="flex items-center gap-3">
+        <a
+  href="#"
+  className="flex items-center gap-3"
+>
 
           <div className="w-10 h-10 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-black">
 
@@ -74,17 +77,17 @@ function Navbar() {
 
           </h1>
 
-        </div>
+        </a>
 
         {/* DESKTOP MENU */}
 
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-12 ml-auto mr-20">
 
           {links.map((link) => (
 
             <a
               key={link}
-              href={`#${link.toLowerCase()}`}
+              href={link === "Home" ? "#" : `#${link.toLowerCase()}`}
               className="text-gray-400 hover:text-white transition-colors duration-300 text-sm font-bold"
             >
 
@@ -98,11 +101,14 @@ function Navbar() {
 
         {/* CTA */}
 
-        <button className="hidden md:flex px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold hover:scale-105 transition-all duration-300">
+        <a
+  href="#contact"
+  className="hidden md:flex px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold hover:scale-105 transition-all duration-300"
+>
 
-          Get Website
+  Get Website
 
-        </button>
+</a>
 
         {/* MOBILE BUTTON */}
 

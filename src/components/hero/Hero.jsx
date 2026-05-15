@@ -72,7 +72,7 @@ function Hero() {
 
         {/* BADGE */}
 
-        <motion.div
+        {/* <motion.div
           variants={itemVariants}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold tracking-[2px] uppercase mb-8 backdrop-blur-md"
         >
@@ -81,7 +81,27 @@ function Hero() {
 
           <span>Neemuch's Premium Agency</span>
 
-        </motion.div>
+        </motion.div> */}
+
+        <motion.div
+  variants={itemVariants}
+  className="flex justify-start pl-[220px] mt-14 mb-10"
+>
+  <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-blue-500/10 border border-blue-500/20 backdrop-blur-xl shadow-lg shadow-blue-500/5">
+
+    <Sparkles
+      size={16}
+      className="text-blue-400"
+    />
+
+    <span className="text-blue-400 text-sm font-bold tracking-[4px] uppercase leading-none">
+
+      Neemuch's Premium Agency
+
+    </span>
+
+  </div>
+</motion.div>
 
         {/* HEADING */}
 
@@ -121,17 +141,16 @@ function Hero() {
           className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
 
-          <button className="group px-10 py-5 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-lg hover:scale-105 transition-all duration-300">
+          <a
+  href="https://ml-portfolio122.vercel.a"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-10 py-5 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-xl hover:scale-105 transition-all duration-300 flex items-center gap-3"
+>
 
-            <span className="flex items-center gap-3">
+  Explore Work →
 
-              Explore Work
-
-              <ArrowRight size={20} />
-
-            </span>
-
-          </button>
+</a>
 
           <button className="px-10 py-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white font-bold text-lg hover:bg-white/10 transition-all">
 
