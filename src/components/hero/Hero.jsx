@@ -85,29 +85,31 @@ function Hero() {
 
         <motion.div
   variants={itemVariants}
-  className="flex justify-start pl-[220px] mt-14 mb-10"
+  className="flex justify-center md:justify-start md:pl-[220px] mt-14 mb-10"
 >
-  <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-blue-500/10 border border-blue-500/20 backdrop-blur-xl shadow-lg shadow-blue-500/5">
+
+  <div className="inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-full bg-blue-500/10 border border-blue-500/20 backdrop-blur-md max-w-full">
 
     <Sparkles
       size={16}
-      className="text-blue-400"
+      className="text-blue-400 flex-shrink-0"
     />
 
-    <span className="text-blue-400 text-sm font-bold tracking-[4px] uppercase leading-none">
+    <span className="text-blue-400 text-[10px] sm:text-xs md:text-sm font-bold tracking-[1px] sm:tracking-[3px] md:tracking-[4px] uppercase leading-none whitespace-nowrap text-center">
 
       Neemuch's Premium Agency
 
     </span>
 
   </div>
+
 </motion.div>
 
         {/* HEADING */}
 
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-8xl font-black leading-[1.1] tracking-tight text-white mb-8"
+          className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight text-white mb-8"
         >
 
           We Build

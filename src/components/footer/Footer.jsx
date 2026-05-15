@@ -41,33 +41,60 @@ function Footer() {
 
             <div className="flex gap-4 mt-10">
 
-              <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white/10 cursor-pointer transition">
+  {/* Instagram */}
 
-                IG
+  <a
+    href="https://instagram.com/jeetam_singh_yadav"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-pink-500 hover:text-white cursor-pointer transition-all duration-300"
+  >
 
-              </div>
+    IG
 
-              <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white/10 cursor-pointer transition">
+  </a>
 
-                IN
+  {/* LinkedIn */}
 
-              </div>
+  <a
+    href="https://linkedin.com/in/jeetamsinghyadav"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white cursor-pointer transition-all duration-300"
+  >
 
-              <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white/10 cursor-pointer transition">
+    IN
 
-                TW
+  </a>
 
-              </div>
+  {/* Twitter/X */}
 
-              <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white/10 cursor-pointer transition">
+  <a
+    href="https://x.com/jeetam12"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-black hover:text-white cursor-pointer transition-all duration-300"
+  >
 
-                GH
+    TW
 
-              </div>
+  </a>
 
-            </div>
+  {/* GitHub */}
 
-          </div>
+  <a
+    href="https://github.com/jeetam1"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black cursor-pointer transition-all duration-300"
+  >
+
+    GH
+
+  </a>
+
+</div>
+</div>
 
           {/* LINKS */}
 
