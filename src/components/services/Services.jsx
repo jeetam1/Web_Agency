@@ -211,7 +211,7 @@ function Services() {
     ? { y: -6 }
     : {}
 }
-              className="group relative p-6 md:p-10 rounded-[2.5rem] bg-white/5 border border-white/10 hover:border-blue-500/40 transition-all duration-500 overflow-hidden touch-none"
+              className="group relative p-6 md:p-10 rounded-[2.5rem] bg-white/5 border border-white/10 hover:border-blue-500/40 transition-all duration-500 overflow-hidden"
             >
 
               {/* HOVER GLOW */}
