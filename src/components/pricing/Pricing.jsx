@@ -264,7 +264,7 @@ function Pricing() {
 
               {/* BUTTON */}
 
-              <button
+              {/* <button
                 className={`w-full py-4 rounded-2xl font-bold transition-all duration-300 ${
                   plan.recommended
                     ? "bg-white text-black hover:scale-[1.02]"
@@ -276,7 +276,7 @@ function Pricing() {
                   ? "Get Started"
                   : "Choose Plan"}
 
-              </button>
+              </button> */}
 
             </motion.div>
 

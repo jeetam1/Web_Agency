@@ -143,16 +143,22 @@ function Hero() {
   className="flex flex-col sm:flex-row gap-6 justify-center items-center"
 >
 
-  <a
-    href="https://ml-portfolio122.vercel.app"
-    target="_blank"
-    rel="noopener noreferrer"
+  {/* <a
+    href="#services"
     className="px-10 py-5 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-xl hover:scale-105 transition-all duration-300 flex items-center gap-3"
   >
 
     Explore Work →
 
-  </a>
+  </a> */}
+
+  <a
+  href="#services"
+  className="px-10 py-5 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold text-xl hover:scale-105 transition-all duration-300 flex items-center gap-3"
+>
+  Explore Work →
+</a>
+
 
   <a
     href="#contact"
