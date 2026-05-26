@@ -13,7 +13,7 @@ const plans = [
   {
     title: "Starter",
 
-    price: "₹1,200",
+    price: "₹10,000",
 
     icon: (
       <Zap
@@ -66,7 +66,7 @@ const plans = [
   {
     title: "Premium",
 
-    price: "₹9,999",
+    price: "₹15,000",
 
     icon: (
       <Crown
