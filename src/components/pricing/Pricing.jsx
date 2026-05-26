@@ -40,7 +40,7 @@ const plans = [
   {
     title: "Business",
 
-    price: "₹2,999",
+    price: "₹15,000",
 
     icon: (
       <Rocket
@@ -66,7 +66,7 @@ const plans = [
   {
     title: "Premium",
 
-    price: "₹15,000",
+    price: "₹25,000",
 
     icon: (
       <Crown
